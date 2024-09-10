@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X_UA_Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Test</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="search-box">
+        <i class="bx bxs-map-pin"></i>
+        <input
+          type="text"
+          placeholder="What's The Location"
+          id="weather-input"
+        />
+        <button class="bx bx-search-alt"></button>
+      </div>
+      <div class="weather-box">
+        <div class="box">
+          <div class="info-weather">
+            <div class="weather">
+              <img src="sun-clouds.png" />
+              <p class="cityname"></p>
+              <p class="temperature">0<span>&deg;C</span></p>
+              <p class="description">Broken Clouds</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="weather-details">
+        <div class="humidity">
+          <i class="bx bx-water"></i>
+          <div class="text">
+            <div class="info-humidity"></div>
+            <span>0%</span>
+          </div>
+          <!-- <p>Humidity</p> -->
+        </div>
+
+        <div class="wind">
+          <i class="bx bxl-tailwind-css"></i>
+          <div class="text">
+            <div class="info-wind"></div>
+            <span>0Km/hr</span>
+          </div>
+          <!-- <p>Wind Speed</p> -->
+        </div>
+      </div>
+    </div>
+    <script src="/app.js"></script>
+  </body>
+</html>
